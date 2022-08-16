@@ -1,0 +1,16 @@
+{
+	"type": "copNetwork",
+	"nodes": {
+		"image_EARTH": {
+			"type": "image",
+			"params": {
+				"url": "textures/earth.jpg?timestamp=1660607161363",
+				"tflipY": 1,
+				"flipY": 1
+			}
+		}
+	},
+	"selection": [
+		"image_EARTH"
+	]
+}

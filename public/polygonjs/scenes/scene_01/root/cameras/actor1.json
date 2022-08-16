@@ -1,0 +1,141 @@
+{
+	"type": "actor",
+	"nodes": {
+		"onTick1": {
+			"type": "onTick"
+		},
+		"setObjectRotation1": {
+			"type": "setObjectRotation",
+			"params": {
+				"rotation": {
+					"overriden_options": {}
+				},
+				"lerp": {
+					"overriden_options": {}
+				},
+				"updateMatrix": {
+					"overriden_options": {}
+				}
+			},
+			"maxInputsCount": 5,
+			"inputs": [
+				{
+					"index": 0,
+					"node": "onTick1",
+					"output": "trigger"
+				},
+				null,
+				{
+					"index": 2,
+					"node": "floatToVec3_2",
+					"output": "vec3"
+				}
+			]
+		},
+		"floatToVec3_2": {
+			"type": "floatToVec3",
+			"params": {
+				"x": {
+					"overriden_options": {}
+				},
+				"y": {
+					"overriden_options": {}
+				},
+				"z": {
+					"overriden_options": {}
+				}
+			},
+			"inputs": [
+				null,
+				{
+					"index": 1,
+					"node": "multAdd1",
+					"output": "val"
+				}
+			]
+		},
+		"multAdd1": {
+			"type": "multAdd",
+			"params": {
+				"value": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": false
+					},
+					"overriden_options": {}
+				},
+				"preAdd": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": true
+					}
+				},
+				"mult": {
+					"type": "float",
+					"default_value": 1,
+					"options": {
+						"spare": true,
+						"editable": true
+					},
+					"raw_input": 0.19
+				},
+				"postAdd": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": true
+					}
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "onTick1",
+					"output": "time"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "value",
+						"type": "float",
+						"isArray": false
+					},
+					{
+						"name": "preAdd",
+						"type": "float",
+						"isArray": false
+					},
+					{
+						"name": "mult",
+						"type": "float",
+						"isArray": false
+					},
+					{
+						"name": "postAdd",
+						"type": "float",
+						"isArray": false
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "float",
+						"isArray": false
+					}
+				]
+			}
+		}
+	},
+	"inputs": [
+		"emptyObject1"
+	],
+	"selection": [
+		"multAdd1"
+	]
+}

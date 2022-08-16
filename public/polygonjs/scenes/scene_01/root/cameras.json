@@ -1,0 +1,57 @@
+{
+	"type": "geo",
+	"nodes": {
+		"perspectiveCamera_MAIN": {
+			"type": "perspectiveCamera",
+			"params": {
+				"position": [
+					-11.500000000000002,
+					2.6,
+					9.5
+				]
+			}
+		},
+		"perspectiveCamera_DEBUG": {
+			"type": "perspectiveCamera",
+			"params": {
+				"position": [
+					0,
+					0,
+					5
+				]
+			}
+		},
+		"merge1": {
+			"type": "merge",
+			"inputs": [
+				"cameraControls1",
+				"setChildren1"
+			],
+			"flags": {
+				"display": true
+			}
+		},
+		"polarTransform1": {
+			"type": "polarTransform",
+			"params": {
+				"depth": 4.5
+			},
+			"inputs": [
+				"perspectiveCamera_MAIN"
+			]
+		},
+		"emptyObject1": {
+			"type": "emptyObject"
+		},
+		"setChildren1": {
+			"type": "setChildren",
+			"inputs": [
+				"actor1",
+				"polarTransform1"
+			]
+		}
+	},
+	"flags": {
+		"display": true
+	}
+}

@@ -1,0 +1,866 @@
+{
+	"type": "particlesSystemGpu",
+	"nodes": {
+		"globals1": {
+			"type": "globals"
+		},
+		"output1": {
+			"type": "output",
+			"inputs": [
+				{
+					"index": 0,
+					"node": "globals1",
+					"output": "position"
+				}
+			]
+		},
+		"attribute1": {
+			"type": "attribute",
+			"params": {
+				"name": "hovered",
+				"texportWhenConnected": 1,
+				"in": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": true
+					}
+				}
+			},
+			"maxInputsCount": 1,
+			"connection_points": {
+				"in": [
+					{
+						"name": "in",
+						"type": "float"
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "float"
+					}
+				]
+			}
+		},
+		"param1": {
+			"type": "param",
+			"params": {
+				"name": "cursor",
+				"type": 4
+			},
+			"connection_points": {
+				"in": [],
+				"out": [
+					{
+						"name": "val",
+						"type": "vec3"
+					}
+				]
+			}
+		},
+		"distance1": {
+			"type": "distance",
+			"params": {
+				"p0": {
+					"type": "vector3",
+					"default_value": [
+						0,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				},
+				"p1": {
+					"type": "vector3",
+					"default_value": [
+						0,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "globals1",
+					"output": "position"
+				},
+				{
+					"index": 1,
+					"node": "param1",
+					"output": "val"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "p0",
+						"type": "vec3"
+					},
+					{
+						"name": "p1",
+						"type": "vec3"
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "float"
+					}
+				]
+			}
+		},
+		"smoothstep1": {
+			"type": "smoothstep",
+			"params": {
+				"edge0": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": true
+					},
+					"raw_input": 0.28
+				},
+				"edge1": {
+					"type": "float",
+					"default_value": 1,
+					"options": {
+						"spare": true,
+						"editable": true
+					},
+					"raw_input": 0.14
+				},
+				"x": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				}
+			},
+			"inputs": [
+				null,
+				null,
+				{
+					"index": 2,
+					"node": "distance1",
+					"output": "val"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "edge0",
+						"type": "float"
+					},
+					{
+						"name": "edge1",
+						"type": "float"
+					},
+					{
+						"name": "x",
+						"type": "float"
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "float"
+					}
+				]
+			}
+		},
+		"attribute2": {
+			"type": "attribute",
+			"params": {
+				"name": "hovered",
+				"texportWhenConnected": 1,
+				"exportWhenConnected": 1,
+				"in": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				}
+			},
+			"maxInputsCount": 1,
+			"inputs": [
+				{
+					"index": 0,
+					"node": "clamp1",
+					"output": "val"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "in",
+						"type": "float"
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "float"
+					}
+				]
+			}
+		},
+		"multAdd1": {
+			"type": "multAdd",
+			"params": {
+				"value": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				},
+				"preAdd": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": true
+					}
+				},
+				"mult": {
+					"type": "float",
+					"default_value": 1,
+					"options": {
+						"spare": true,
+						"editable": true
+					},
+					"raw_input": 0.29
+				},
+				"postAdd": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": true
+					}
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "smoothstep1",
+					"output": "val"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "value",
+						"type": "float"
+					},
+					{
+						"name": "preAdd",
+						"type": "float"
+					},
+					{
+						"name": "mult",
+						"type": "float"
+					},
+					{
+						"name": "postAdd",
+						"type": "float"
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "float"
+					}
+				]
+			}
+		},
+		"add2": {
+			"type": "add",
+			"params": {
+				"add0": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				},
+				"add1": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				},
+				"add2": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": true
+					}
+				}
+			},
+			"maxInputsCount": 3,
+			"inputs": [
+				{
+					"index": 0,
+					"node": "multAdd1",
+					"output": "val"
+				},
+				{
+					"index": 1,
+					"node": "multAdd2",
+					"output": "val"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "add0",
+						"type": "float"
+					},
+					{
+						"name": "add1",
+						"type": "float"
+					},
+					{
+						"name": "add2",
+						"type": "float"
+					}
+				],
+				"out": [
+					{
+						"name": "sum",
+						"type": "float"
+					}
+				]
+			}
+		},
+		"multAdd2": {
+			"type": "multAdd",
+			"params": {
+				"value": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				},
+				"preAdd": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": true
+					}
+				},
+				"mult": {
+					"type": "float",
+					"default_value": 1,
+					"options": {
+						"spare": true,
+						"editable": true
+					},
+					"raw_input": 0.995
+				},
+				"postAdd": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": true
+					}
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "attribute1",
+					"output": "val"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "value",
+						"type": "float"
+					},
+					{
+						"name": "preAdd",
+						"type": "float"
+					},
+					{
+						"name": "mult",
+						"type": "float"
+					},
+					{
+						"name": "postAdd",
+						"type": "float"
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "float"
+					}
+				]
+			}
+		},
+		"clamp1": {
+			"type": "clamp",
+			"params": {
+				"value": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				},
+				"min": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": true
+					}
+				},
+				"max": {
+					"type": "float",
+					"default_value": 1,
+					"options": {
+						"spare": true,
+						"editable": true
+					}
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "add2",
+					"output": "sum"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "value",
+						"type": "float"
+					},
+					{
+						"name": "min",
+						"type": "float"
+					},
+					{
+						"name": "max",
+						"type": "float"
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "float"
+					}
+				]
+			}
+		},
+		"attribute3": {
+			"type": "attribute",
+			"params": {
+				"name": "basecolor",
+				"type": 2,
+				"texportWhenConnected": 1,
+				"in": {
+					"type": "vector3",
+					"default_value": [
+						0,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": true
+					}
+				}
+			},
+			"maxInputsCount": 1,
+			"connection_points": {
+				"in": [
+					{
+						"name": "in",
+						"type": "vec3"
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "vec3"
+					}
+				]
+			}
+		},
+		"attribute4": {
+			"type": "attribute",
+			"params": {
+				"name": "basecolor",
+				"type": 2,
+				"texportWhenConnected": 1,
+				"exportWhenConnected": 1,
+				"in": {
+					"type": "vector3",
+					"default_value": [
+						0,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": false
+					},
+					"overriden_options": {}
+				}
+			},
+			"maxInputsCount": 1,
+			"inputs": [
+				{
+					"index": 0,
+					"node": "mix1",
+					"output": "mix"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "in",
+						"type": "vec3"
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "vec3"
+					}
+				]
+			}
+		},
+		"multAdd3": {
+			"type": "multAdd",
+			"params": {
+				"value": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": false
+					},
+					"overriden_options": {}
+				},
+				"preAdd": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": true
+					}
+				},
+				"mult": {
+					"type": "float",
+					"default_value": 1,
+					"options": {
+						"spare": true,
+						"editable": true
+					},
+					"raw_input": 0.13
+				},
+				"postAdd": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": true
+					}
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "globals1",
+					"output": "time"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "value",
+						"type": "float"
+					},
+					{
+						"name": "preAdd",
+						"type": "float"
+					},
+					{
+						"name": "mult",
+						"type": "float"
+					},
+					{
+						"name": "postAdd",
+						"type": "float"
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "float"
+					}
+				]
+			}
+		},
+		"floatToVec3_1": {
+			"type": "floatToVec3",
+			"params": {
+				"x": {
+					"overriden_options": {}
+				},
+				"y": {
+					"raw_input": 0.95,
+					"overriden_options": {}
+				},
+				"z": {
+					"raw_input": 0.83,
+					"overriden_options": {}
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "multAdd3",
+					"output": "val"
+				}
+			]
+		},
+		"mix1": {
+			"type": "mix",
+			"params": {
+				"value0": {
+					"type": "vector3",
+					"default_value": [
+						0,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				},
+				"value1": {
+					"type": "vector3",
+					"default_value": [
+						0,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": false
+					},
+					"overriden_options": {}
+				},
+				"blend": {
+					"type": "float",
+					"default_value": 0.5,
+					"options": {
+						"spare": true,
+						"editable": false
+					},
+					"overriden_options": {}
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "attribute3",
+					"output": "val"
+				},
+				{
+					"index": 1,
+					"node": "hsvToRgb1",
+					"output": "rgb"
+				},
+				{
+					"index": 2,
+					"node": "multAdd1",
+					"output": "val"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "value0",
+						"type": "vec3"
+					},
+					{
+						"name": "value1",
+						"type": "vec3"
+					},
+					{
+						"name": "blend",
+						"type": "float"
+					}
+				],
+				"out": [
+					{
+						"name": "mix",
+						"type": "vec3"
+					}
+				]
+			}
+		},
+		"hsvToRgb1": {
+			"type": "hsvToRgb",
+			"params": {
+				"hsv": {
+					"overriden_options": {}
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "floatToVec3_1",
+					"output": "vec3"
+				}
+			]
+		}
+	},
+	"params": {
+		"material": "../MAT/pointsParticles",
+		"cursor": {
+			"type": "vector3",
+			"default_value": [
+				0,
+				0,
+				0
+			],
+			"options": {
+				"spare": true,
+				"computeOnDirty": true,
+				"cook": false,
+				"dependentOnFoundNode": true
+			},
+			"raw_input": [
+				"ch(\"../eventsNetwork1/raycast1/positionx\")",
+				"ch(\"../eventsNetwork1/raycast1/positiony\")",
+				"ch(\"../eventsNetwork1/raycast1/positionz\")"
+			],
+			"overriden_options": {
+				"callback": "{}"
+			}
+		}
+	},
+	"inputs": [
+		"attribCreate2"
+	],
+	"persisted_config": {
+		"shaders_by_name": {
+			"basecolor_SEPARATOR_hovered": "#include <common>\n\n// removed:\n//// INSERT DEFINE\n\n\n\n// /globe/particlesSystemGpu1/hsvToRgb1\n// https://github.com/hughsk/glsl-hsv2rgb\n// https://stackoverflow.com/questions/15095909/from-rgb-to-hsv-in-opengl-glsl\nvec3 hsv2rgb(vec3 c) {\n\tvec4 K = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);\n\tvec3 p = abs(fract(c.xxx + K.xyz) * 6.0 - K.www);\n\treturn c.z * mix(K.xxx, clamp(p - K.xxx, 0.0, 1.0), c.y);\n}\n\n\n\n\n\n\n\n// /globe/particlesSystemGpu1/globals1\nuniform sampler2D texture_position;\nuniform float time;\n\n// /globe/particlesSystemGpu1/param1\nuniform vec3 v_POLY_param_cursor;\n\n// /globe/particlesSystemGpu1/attribute1\nuniform sampler2D texture_basecolor_SEPARATOR_hovered;\n\n\n\n\n\nvoid main() {\n\n\tvec2 particleUV = (gl_FragCoord.xy / resolution.xy);\n\n// removed:\n//\t// INSERT BODY\n\n\n\n\t// /globe/particlesSystemGpu1/globals1\n\tvec3 v_POLY_globals1_position = texture2D( texture_position, particleUV ).xyz;\n\tfloat v_POLY_globals1_time = time;\n\t\n\t// /globe/particlesSystemGpu1/param1\n\tvec3 v_POLY_param1_val = v_POLY_param_cursor;\n\t\n\t// /globe/particlesSystemGpu1/attribute1\n\tfloat v_POLY_attribute1_val = texture2D( texture_basecolor_SEPARATOR_hovered, particleUV ).w;\n\tgl_FragColor.w = v_POLY_attribute1_val;\n\t\n\t// /globe/particlesSystemGpu1/attribute3\n\tvec3 v_POLY_attribute3_val = texture2D( texture_basecolor_SEPARATOR_hovered, particleUV ).xyz;\n\tgl_FragColor.xyz = v_POLY_attribute3_val;\n\t\n\t// /globe/particlesSystemGpu1/distance1\n\tfloat v_POLY_distance1_val = distance(v_POLY_globals1_position, v_POLY_param1_val);\n\t\n\t// /globe/particlesSystemGpu1/multAdd2\n\tfloat v_POLY_multAdd2_val = (0.995*(v_POLY_attribute1_val + 0.0)) + 0.0;\n\t\n\t// /globe/particlesSystemGpu1/multAdd3\n\tfloat v_POLY_multAdd3_val = (0.13*(v_POLY_globals1_time + 0.0)) + 0.0;\n\t\n\t// /globe/particlesSystemGpu1/smoothstep1\n\tfloat v_POLY_smoothstep1_val = smoothstep(0.28, 0.14, v_POLY_distance1_val);\n\t\n\t// /globe/particlesSystemGpu1/floatToVec3_1\n\tvec3 v_POLY_floatToVec3_1_vec3 = vec3(v_POLY_multAdd3_val, 0.95, 0.83);\n\t\n\t// /globe/particlesSystemGpu1/multAdd1\n\tfloat v_POLY_multAdd1_val = (0.29*(v_POLY_smoothstep1_val + 0.0)) + 0.0;\n\t\n\t// /globe/particlesSystemGpu1/hsvToRgb1\n\tvec3 v_POLY_hsvToRgb1_rgb = hsv2rgb(v_POLY_floatToVec3_1_vec3);\n\t\n\t// /globe/particlesSystemGpu1/add2\n\tfloat v_POLY_add2_sum = (v_POLY_multAdd1_val + v_POLY_multAdd2_val + 0.0);\n\t\n\t// /globe/particlesSystemGpu1/mix1\n\tvec3 v_POLY_mix1_mix = mix(v_POLY_attribute3_val, v_POLY_hsvToRgb1_rgb, v_POLY_multAdd1_val);\n\t\n\t// /globe/particlesSystemGpu1/clamp1\n\tfloat v_POLY_clamp1_val = clamp(v_POLY_add2_sum, 0.0, 1.0);\n\t\n\t// /globe/particlesSystemGpu1/attribute4\n\tgl_FragColor.xyz = v_POLY_mix1_mix;\n\t\n\t// /globe/particlesSystemGpu1/attribute2\n\tgl_FragColor.w = v_POLY_clamp1_val;\n\n\n\n\n}",
+			"position": "#include <common>\n\n// removed:\n//// INSERT DEFINE\n\n\n\n// /globe/particlesSystemGpu1/hsvToRgb1\n// https://github.com/hughsk/glsl-hsv2rgb\n// https://stackoverflow.com/questions/15095909/from-rgb-to-hsv-in-opengl-glsl\nvec3 hsv2rgb(vec3 c) {\n\tvec4 K = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);\n\tvec3 p = abs(fract(c.xxx + K.xyz) * 6.0 - K.www);\n\treturn c.z * mix(K.xxx, clamp(p - K.xxx, 0.0, 1.0), c.y);\n}\n\n\n\n\n\n\n\n// /globe/particlesSystemGpu1/globals1\nuniform sampler2D texture_position;\nuniform float time;\n\n// /globe/particlesSystemGpu1/param1\nuniform vec3 v_POLY_param_cursor;\n\n// /globe/particlesSystemGpu1/attribute1\nuniform sampler2D texture_basecolor_SEPARATOR_hovered;\n\n\n\n\n\nvoid main() {\n\n\tvec2 particleUV = (gl_FragCoord.xy / resolution.xy);\n\n// removed:\n//\t// INSERT BODY\n\n\n\n\t// /globe/particlesSystemGpu1/globals1\n\tvec3 v_POLY_globals1_position = texture2D( texture_position, particleUV ).xyz;\n\tfloat v_POLY_globals1_time = time;\n\t\n\t// /globe/particlesSystemGpu1/param1\n\tvec3 v_POLY_param1_val = v_POLY_param_cursor;\n\t\n\t// /globe/particlesSystemGpu1/attribute1\n\tfloat v_POLY_attribute1_val = texture2D( texture_basecolor_SEPARATOR_hovered, particleUV ).w;\n\t\n\t// /globe/particlesSystemGpu1/attribute3\n\tvec3 v_POLY_attribute3_val = texture2D( texture_basecolor_SEPARATOR_hovered, particleUV ).xyz;\n\t\n\t// /globe/particlesSystemGpu1/distance1\n\tfloat v_POLY_distance1_val = distance(v_POLY_globals1_position, v_POLY_param1_val);\n\t\n\t// /globe/particlesSystemGpu1/multAdd2\n\tfloat v_POLY_multAdd2_val = (0.995*(v_POLY_attribute1_val + 0.0)) + 0.0;\n\t\n\t// /globe/particlesSystemGpu1/multAdd3\n\tfloat v_POLY_multAdd3_val = (0.13*(v_POLY_globals1_time + 0.0)) + 0.0;\n\t\n\t// /globe/particlesSystemGpu1/output1\n\tgl_FragColor.xyz = v_POLY_globals1_position;\n\t\n\t// /globe/particlesSystemGpu1/smoothstep1\n\tfloat v_POLY_smoothstep1_val = smoothstep(0.28, 0.14, v_POLY_distance1_val);\n\t\n\t// /globe/particlesSystemGpu1/floatToVec3_1\n\tvec3 v_POLY_floatToVec3_1_vec3 = vec3(v_POLY_multAdd3_val, 0.95, 0.83);\n\t\n\t// /globe/particlesSystemGpu1/multAdd1\n\tfloat v_POLY_multAdd1_val = (0.29*(v_POLY_smoothstep1_val + 0.0)) + 0.0;\n\t\n\t// /globe/particlesSystemGpu1/hsvToRgb1\n\tvec3 v_POLY_hsvToRgb1_rgb = hsv2rgb(v_POLY_floatToVec3_1_vec3);\n\t\n\t// /globe/particlesSystemGpu1/add2\n\tfloat v_POLY_add2_sum = (v_POLY_multAdd1_val + v_POLY_multAdd2_val + 0.0);\n\t\n\t// /globe/particlesSystemGpu1/mix1\n\tvec3 v_POLY_mix1_mix = mix(v_POLY_attribute3_val, v_POLY_hsvToRgb1_rgb, v_POLY_multAdd1_val);\n\t\n\t// /globe/particlesSystemGpu1/clamp1\n\tfloat v_POLY_clamp1_val = clamp(v_POLY_add2_sum, 0.0, 1.0);\n\n\n\n\n}"
+		},
+		"texture_allocations": {
+			"writable": [
+				{
+					"basecolor_SEPARATOR_hovered": [
+						{
+							"name": "basecolor",
+							"size": 3,
+							"nodes": [
+								"/globe/particlesSystemGpu1/attribute4",
+								"/globe/particlesSystemGpu1/attribute3"
+							]
+						},
+						{
+							"name": "hovered",
+							"size": 1,
+							"nodes": [
+								"/globe/particlesSystemGpu1/attribute2",
+								"/globe/particlesSystemGpu1/attribute1"
+							]
+						}
+					]
+				},
+				{
+					"position": [
+						{
+							"name": "position",
+							"size": 3,
+							"nodes": [
+								"/globe/particlesSystemGpu1/output1",
+								"/globe/particlesSystemGpu1/globals1"
+							]
+						}
+					]
+				}
+			],
+			"readonly": []
+		},
+		"param_uniform_pairs": [
+			[
+				"cursor",
+				"v_POLY_param_cursor"
+			]
+		],
+		"uniforms_owner": {
+			"metadata": {
+				"version": 4.5,
+				"type": "Material",
+				"generator": "Material.toJSON"
+			},
+			"uuid": "/globe/particlesSystemGpu1-main",
+			"type": "ShaderMaterial",
+			"depthFunc": 3,
+			"depthTest": true,
+			"depthWrite": true,
+			"colorWrite": true,
+			"stencilWrite": false,
+			"stencilWriteMask": 255,
+			"stencilFunc": 519,
+			"stencilRef": 0,
+			"stencilFuncMask": 255,
+			"stencilFail": 7680,
+			"stencilZFail": 7680,
+			"stencilZPass": 7680,
+			"glslVersion": null,
+			"uniforms": {
+				"v_POLY_param_cursor": {
+					"type": "v3",
+					"value": [
+						0.19485175245958386,
+						-0.14696741939541005,
+						0.957779063897469
+					]
+				}
+			},
+			"vertexShader": "void main() {\n\tgl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );\n}",
+			"fragmentShader": "void main() {\n\tgl_FragColor = vec4( 1.0, 0.0, 0.0, 1.0 );\n}",
+			"lights": false
+		}
+	}
+}

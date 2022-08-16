@@ -1,0 +1,102 @@
+{
+	"type": "geo",
+	"nodes": {
+		"BVH1": {
+			"type": "BVH",
+			"inputs": [
+				"material1"
+			]
+		},
+		"objectProperties1": {
+			"type": "objectProperties",
+			"params": {
+				"tname": 1,
+				"name": "raycastTarget",
+				"visible": 0
+			},
+			"inputs": [
+				"BVH1"
+			]
+		},
+		"merge1": {
+			"type": "merge",
+			"inputs": [
+				"particlesSystemGpu1",
+				"objectProperties1"
+			],
+			"flags": {
+				"display": true
+			},
+			"cloned_state_overriden": true
+		},
+		"attribCreate1": {
+			"type": "attribCreate",
+			"params": {
+				"name": "hovered"
+			},
+			"inputs": [
+				"delete1"
+			]
+		},
+		"sphere2": {
+			"type": "sphere",
+			"params": {
+				"radius": 0.995
+			}
+		},
+		"material1": {
+			"type": "material",
+			"params": {
+				"material": "../MAT/meshBasic1"
+			},
+			"inputs": [
+				"sphere2"
+			]
+		},
+		"attribFromTexture1": {
+			"type": "attribFromTexture",
+			"params": {
+				"texture": "../COP/image_EARTH",
+				"attrib": "land"
+			},
+			"inputs": [
+				"icosahedron1"
+			]
+		},
+		"icosahedron1": {
+			"type": "icosahedron",
+			"params": {
+				"detail": 32,
+				"pointsOnly": 1
+			}
+		},
+		"attribCreate2": {
+			"type": "attribCreate",
+			"params": {
+				"name": "basecolor",
+				"size": 3,
+				"value3": [
+					1,
+					1,
+					1
+				]
+			},
+			"inputs": [
+				"attribCreate1"
+			]
+		},
+		"delete1": {
+			"type": "delete",
+			"params": {
+				"byExpression": 1,
+				"expression": "@land==0"
+			},
+			"inputs": [
+				"attribFromTexture1"
+			]
+		}
+	},
+	"flags": {
+		"display": true
+	}
+}
