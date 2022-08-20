@@ -1,6 +1,8 @@
 ![Painted Globe Website Template](https://github.com/polygonjs/template-painted-globe/blob/main/public/screenshots/screenshot1.jpg?raw=true)
 ![Screenshot from Polygonjs](https://github.com/polygonjs/template-painted-globe/blob/main/public/screenshots/screenshot3.jpg?raw=true)
 
+[Live Demo](https://market.polygonjs.com/gui/templates/painted-globe)
+
 # template-painted-globe
 
 This project was created using:
