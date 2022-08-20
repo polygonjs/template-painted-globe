@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build && yarn clean_dist",
     "lint": "vue-cli-service lint",
-    "polygon": "polygonjs-editor"
+    "polygon": "polygonjs-editor",
+    "clean_dist": "rm -rf dist/polygonjs/backup && rm -rf dist/polygonjs/js && rm -rf dist/screenshots"
   },
   "dependencies": {
     "core-js": "^3.8.3",
