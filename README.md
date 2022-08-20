@@ -1,3 +1,7 @@
+![Painted Globe Website Template](https://github.com/polygonjs/template-painted-globe/blob/main/public/screenshots/screenshot1.jpg?raw=true)
+
+<img src="https://github.com/polygonjs/template-painted-globe/blob/main/public/screenshots/screenshot1.jpg?raw=true" />
+
 # template-painted-globe
 
 This project was created using:
