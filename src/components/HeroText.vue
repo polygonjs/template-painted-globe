@@ -3,7 +3,7 @@
     <h1
       class="relative mb-4 text-2xl font-black leading-tight text-gray-900 sm:text-6xl xl:mb-8"
     >
-      We love digital ink
+      Let's explore the world
     </h1>
     <p class="pr-0 mb-8 text-base text-gray-600 sm:text-lg xl:text-xl pl-32">
       <span class="block">Are you ready to dazzle your audience with</span>

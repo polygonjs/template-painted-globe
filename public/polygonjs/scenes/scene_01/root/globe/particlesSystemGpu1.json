@@ -535,8 +535,7 @@
 					"options": {
 						"spare": true,
 						"editable": false
-					},
-					"overriden_options": {}
+					}
 				}
 			},
 			"maxInputsCount": 1,
@@ -571,8 +570,7 @@
 					"options": {
 						"spare": true,
 						"editable": false
-					},
-					"overriden_options": {}
+					}
 				},
 				"preAdd": {
 					"type": "float",
@@ -682,8 +680,7 @@
 					"options": {
 						"spare": true,
 						"editable": false
-					},
-					"overriden_options": {}
+					}
 				},
 				"blend": {
 					"type": "float",
@@ -691,8 +688,7 @@
 					"options": {
 						"spare": true,
 						"editable": false
-					},
-					"overriden_options": {}
+					}
 				}
 			},
 			"inputs": [
@@ -852,9 +848,9 @@
 				"v_POLY_param_cursor": {
 					"type": "v3",
 					"value": [
-						0.19485175245958386,
-						-0.14696741939541005,
-						0.957779063897469
+						0.5412818691180998,
+						-0.36388762293161925,
+						-0.7433990510574824
 					]
 				}
 			},
