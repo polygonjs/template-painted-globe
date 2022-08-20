@@ -1,4 +1,4 @@
-# template-minimal-digital-ink
+# template-painted-globe
 
 This project was created using:
 
