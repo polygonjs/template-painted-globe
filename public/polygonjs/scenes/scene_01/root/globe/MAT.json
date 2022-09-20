@@ -4,11 +4,7 @@
 		"meshBasic1": {
 			"type": "meshBasic",
 			"params": {
-				"color": [
-					0,
-					0,
-					0
-				]
+				"color": [0, 0, 0]
 			}
 		}
 	}

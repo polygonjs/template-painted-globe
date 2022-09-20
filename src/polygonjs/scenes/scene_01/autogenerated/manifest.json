@@ -1,16 +1,32 @@
 {
-	"properties": "1660955128058",
+	"properties": "1663712037130",
 	"root": "1660955128058",
 	"nodes": {
 		"cameras": "1660955128058",
 		"cameras/cameraControls1": "1660955128058",
-		"cameras/actor1": "1660955128058",
-		"lights": "1660955128058",
+		"cameras/actor1": "1663712037130",
+		"lights": "1663712037130",
 		"globe": "1660955128058",
 		"globe/MAT": "1660955128058",
-		"globe/MAT/pointsParticles": "1660955128058",
-		"globe/COP": "1660955128058",
-		"globe/particlesSystemGpu1": "1660955128058",
-		"globe/eventsNetwork1": "1660955128058"
+		"globe/MAT/pointsParticles": "1663712037130",
+		"globe/COP": "1663712037130",
+		"globe/particlesSystemGpu1": "1663712037130",
+		"globe/eventsNetwork1": "1663712037130"
+	},
+	"shaders": {
+		"/globe/MAT/pointsParticles": {
+			"vertex": "1663712037130",
+			"fragment": "1663712037130",
+			"customDistanceMaterial.vertex": "1663712037130",
+			"customDistanceMaterial.fragment": "1663712037130",
+			"customDepthMaterial.vertex": "1663712037130",
+			"customDepthMaterial.fragment": "1663712037130",
+			"customDepthDOFMaterial.vertex": "1663712037130",
+			"customDepthDOFMaterial.fragment": "1663712037130"
+		},
+		"/globe/particlesSystemGpu1": {
+			"basecolor_SEPARATOR_hovered": "1663712037130",
+			"position": "1663712037130"
+		}
 	}
 }

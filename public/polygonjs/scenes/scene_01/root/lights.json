@@ -18,25 +18,16 @@
 		"polarTransform1": {
 			"type": "polarTransform",
 			"params": {
-				"center": [
-					0,
-					2.3,
-					0
-				],
+				"center": [0, 2.3, 0],
 				"longitude": 230.4,
 				"latitude": 36,
 				"depth": 6.5
 			},
-			"inputs": [
-				"areaLight1"
-			]
+			"inputs": ["areaLight1"]
 		},
 		"merge1": {
 			"type": "merge",
-			"inputs": [
-				"polarTransform1",
-				"hemisphereLight1"
-			],
+			"inputs": ["polarTransform1", "hemisphereLight1"],
 			"flags": {
 				"display": true
 			}
@@ -44,8 +35,5 @@
 	},
 	"flags": {
 		"display": true
-	},
-	"selection": [
-		"areaLight1"
-	]
+	}
 }

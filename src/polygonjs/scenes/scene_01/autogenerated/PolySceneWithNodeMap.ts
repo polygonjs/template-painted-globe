@@ -335,6 +335,10 @@ export interface PolySceneProps_scene_01 {
   "globe--updateTransformFromObject"?: ParamValueSerializedTypeMap["button"];
   "globe--display"?: ParamValueSerializedTypeMap["boolean"];
   "globe--renderOrder"?: ParamValueSerializedTypeMap["integer"];
+  "globe-BVH1--strategy"?: ParamValueSerializedTypeMap["integer"];
+  "globe-BVH1--maxDepth"?: ParamValueSerializedTypeMap["integer"];
+  "globe-BVH1--maxLeafTris"?: ParamValueSerializedTypeMap["integer"];
+  "globe-BVH1--verbose"?: ParamValueSerializedTypeMap["boolean"];
   "globe-BVH1--keepOnlyPosition"?: ParamValueSerializedTypeMap["boolean"];
   "globe-objectProperties1--applyToChildren"?: ParamValueSerializedTypeMap["boolean"];
   "globe-objectProperties1--tname"?: ParamValueSerializedTypeMap["boolean"];

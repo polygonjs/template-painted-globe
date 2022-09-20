@@ -3,9 +3,7 @@
 	"nodes": {
 		"BVH1": {
 			"type": "BVH",
-			"inputs": [
-				"material1"
-			]
+			"inputs": ["material1"]
 		},
 		"objectProperties1": {
 			"type": "objectProperties",
@@ -14,16 +12,11 @@
 				"name": "raycastTarget",
 				"visible": 0
 			},
-			"inputs": [
-				"BVH1"
-			]
+			"inputs": ["BVH1"]
 		},
 		"merge1": {
 			"type": "merge",
-			"inputs": [
-				"particlesSystemGpu1",
-				"objectProperties1"
-			],
+			"inputs": ["particlesSystemGpu1", "objectProperties1"],
 			"flags": {
 				"display": true
 			},
@@ -34,9 +27,7 @@
 			"params": {
 				"name": "hovered"
 			},
-			"inputs": [
-				"delete1"
-			]
+			"inputs": ["delete1"]
 		},
 		"sphere2": {
 			"type": "sphere",
@@ -49,9 +40,7 @@
 			"params": {
 				"material": "../MAT/meshBasic1"
 			},
-			"inputs": [
-				"sphere2"
-			]
+			"inputs": ["sphere2"]
 		},
 		"attribFromTexture1": {
 			"type": "attribFromTexture",
@@ -59,9 +48,7 @@
 				"texture": "../COP/image_EARTH",
 				"attrib": "land"
 			},
-			"inputs": [
-				"icosahedron1"
-			]
+			"inputs": ["icosahedron1"]
 		},
 		"icosahedron1": {
 			"type": "icosahedron",
@@ -75,15 +62,9 @@
 			"params": {
 				"name": "basecolor",
 				"size": 3,
-				"value3": [
-					1,
-					1,
-					1
-				]
+				"value3": [1, 1, 1]
 			},
-			"inputs": [
-				"attribCreate1"
-			]
+			"inputs": ["attribCreate1"]
 		},
 		"delete1": {
 			"type": "delete",
@@ -91,9 +72,7 @@
 				"byExpression": 1,
 				"expression": "@land==0"
 			},
-			"inputs": [
-				"attribFromTexture1"
-			]
+			"inputs": ["attribFromTexture1"]
 		}
 	},
 	"flags": {

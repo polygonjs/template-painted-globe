@@ -131,10 +131,5 @@
 			}
 		}
 	},
-	"inputs": [
-		"emptyObject1"
-	],
-	"selection": [
-		"multAdd1"
-	]
+	"inputs": ["emptyObject1"]
 }
