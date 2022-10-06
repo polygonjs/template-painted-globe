@@ -6,6 +6,7 @@ import { SetObjectRotationActorNode } from "@polygonjs/polygonjs/dist/src/engine
 // cop
 import { ImageCopNode } from "@polygonjs/polygonjs/dist/src/engine/nodes/cop/Image";
 // event
+import { AnyEventNode } from "@polygonjs/polygonjs/dist/src/engine/nodes/event/Any";
 import { CameraOrbitControlsEventNode } from "@polygonjs/polygonjs/dist/src/engine/nodes/event/CameraOrbitControls";
 import { PointerEventNode } from "@polygonjs/polygonjs/dist/src/engine/nodes/event/Pointer";
 import { RaycastEventNode } from "@polygonjs/polygonjs/dist/src/engine/nodes/event/Raycast";
@@ -46,6 +47,7 @@ export const requiredImports_scene_01 = {
     OnTickActorNode,
     SetObjectRotationActorNode,
     ImageCopNode,
+    AnyEventNode,
     CameraOrbitControlsEventNode,
     PointerEventNode,
     RaycastEventNode,

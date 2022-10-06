@@ -43,10 +43,50 @@
 			"inputs": [
 				{
 					"index": 0,
+					"node": "any1",
+					"output": "event"
+				}
+			]
+		},
+		"any1": {
+			"type": "any",
+			"params": {
+				"inputsCount": 2
+			},
+			"maxInputsCount": 2,
+			"inputs": [
+				{
+					"index": 0,
+					"node": "scene1",
+					"output": "created"
+				},
+				{
+					"index": 1,
 					"node": "scene1",
 					"output": "ready"
 				}
-			]
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "trigger0",
+						"type": "base",
+						"isArray": false
+					},
+					{
+						"name": "trigger1",
+						"type": "base",
+						"isArray": false
+					}
+				],
+				"out": [
+					{
+						"name": "event",
+						"type": "base",
+						"isArray": false
+					}
+				]
+			}
 		}
 	}
 }

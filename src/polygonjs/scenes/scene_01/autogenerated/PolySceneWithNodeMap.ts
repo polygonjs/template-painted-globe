@@ -26,6 +26,7 @@ import { PolarTransformSopNode } from "@polygonjs/polygonjs/dist/src/engine/node
 import { SetChildrenSopNode } from "@polygonjs/polygonjs/dist/src/engine/nodes/sop/SetChildren";
 import { SphereSopNode } from "@polygonjs/polygonjs/dist/src/engine/nodes/sop/Sphere";
 // event
+import { AnyEventNode } from "@polygonjs/polygonjs/dist/src/engine/nodes/event/Any";
 import { CameraOrbitControlsEventNode } from "@polygonjs/polygonjs/dist/src/engine/nodes/event/CameraOrbitControls";
 import { PointerEventNode } from "@polygonjs/polygonjs/dist/src/engine/nodes/event/Pointer";
 import { RaycastEventNode } from "@polygonjs/polygonjs/dist/src/engine/nodes/event/Raycast";
@@ -86,6 +87,7 @@ export class PolySceneWithNodeMap_scene_01 extends PolyScene {
   node(path: "/globe/eventsNetwork1/pointer1"): PointerEventNode;
   node(path: "/globe/eventsNetwork1/scene1"): SceneEventNode;
   node(path: "/globe/eventsNetwork1/setParam1"): SetParamEventNode;
+  node(path: "/globe/eventsNetwork1/any1"): AnyEventNode;
   node(
     path: string
   ): any /* we need any for now as otherwise an error occurs when adding plugins to the overloaded methods */ {
@@ -758,4 +760,6 @@ export interface PolySceneProps_scene_01 {
   "globe-eventsNetwork1-setParam1--increment"?: ParamValueSerializedTypeMap["boolean"];
   "globe-eventsNetwork1-setParam1--string"?: ParamValueSerializedTypeMap["string"];
   "globe-eventsNetwork1-setParam1--execute"?: ParamValueSerializedTypeMap["button"];
+  "globe-eventsNetwork1-any1--active"?: ParamValueSerializedTypeMap["boolean"];
+  "globe-eventsNetwork1-any1--inputsCount"?: ParamValueSerializedTypeMap["integer"];
 }
