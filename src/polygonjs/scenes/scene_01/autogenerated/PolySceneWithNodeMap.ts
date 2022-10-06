@@ -29,6 +29,8 @@ import { SphereSopNode } from "@polygonjs/polygonjs/dist/src/engine/nodes/sop/Sp
 import { CameraOrbitControlsEventNode } from "@polygonjs/polygonjs/dist/src/engine/nodes/event/CameraOrbitControls";
 import { PointerEventNode } from "@polygonjs/polygonjs/dist/src/engine/nodes/event/Pointer";
 import { RaycastEventNode } from "@polygonjs/polygonjs/dist/src/engine/nodes/event/Raycast";
+import { SceneEventNode } from "@polygonjs/polygonjs/dist/src/engine/nodes/event/Scene";
+import { SetParamEventNode } from "@polygonjs/polygonjs/dist/src/engine/nodes/event/SetParam";
 // actor
 import { FloatToVec3ActorNode } from "@polygonjs/polygonjs/dist/src/engine/nodes/actor/FloatToVec3";
 import { MultAddActorNode } from "@polygonjs/polygonjs/dist/src/engine/nodes/actor/MultAdd";
@@ -82,6 +84,8 @@ export class PolySceneWithNodeMap_scene_01 extends PolyScene {
   node(path: "/globe/eventsNetwork1"): EventsNetworkSopNode;
   node(path: "/globe/eventsNetwork1/raycast1"): RaycastEventNode;
   node(path: "/globe/eventsNetwork1/pointer1"): PointerEventNode;
+  node(path: "/globe/eventsNetwork1/scene1"): SceneEventNode;
+  node(path: "/globe/eventsNetwork1/setParam1"): SetParamEventNode;
   node(
     path: string
   ): any /* we need any for now as otherwise an error occurs when adding plugins to the overloaded methods */ {
@@ -714,4 +718,44 @@ export interface PolySceneProps_scene_01 {
   "globe-eventsNetwork1-pointer1--altKey"?: ParamValueSerializedTypeMap["boolean"];
   "globe-eventsNetwork1-pointer1--shiftKey"?: ParamValueSerializedTypeMap["boolean"];
   "globe-eventsNetwork1-pointer1--metaKey"?: ParamValueSerializedTypeMap["boolean"];
+  "globe-eventsNetwork1-scene1--active"?: ParamValueSerializedTypeMap["boolean"];
+  "globe-eventsNetwork1-scene1--element"?: ParamValueSerializedTypeMap["integer"];
+  "globe-eventsNetwork1-scene1--created"?: ParamValueSerializedTypeMap["boolean"];
+  "globe-eventsNetwork1-scene1--ready"?: ParamValueSerializedTypeMap["boolean"];
+  "globe-eventsNetwork1-scene1--play"?: ParamValueSerializedTypeMap["boolean"];
+  "globe-eventsNetwork1-scene1--pause"?: ParamValueSerializedTypeMap["boolean"];
+  "globe-eventsNetwork1-scene1--tick"?: ParamValueSerializedTypeMap["boolean"];
+  "globe-eventsNetwork1-scene1--treachedTime"?: ParamValueSerializedTypeMap["boolean"];
+  "globe-eventsNetwork1-scene1--reachedTime"?: ParamValueSerializedTypeMap["float"];
+  "globe-eventsNetwork1-scene1--setFrameValue"?: ParamValueSerializedTypeMap["integer"];
+  "globe-eventsNetwork1-scene1--setFrame"?: ParamValueSerializedTypeMap["button"];
+  "globe-eventsNetwork1-setParam1--param"?: ParamValueSerializedTypeMap["param_path"];
+  "globe-eventsNetwork1-setParam1--type"?: ParamValueSerializedTypeMap["integer"];
+  "globe-eventsNetwork1-setParam1--toggle"?: ParamValueSerializedTypeMap["boolean"];
+  "globe-eventsNetwork1-setParam1--boolean"?: ParamValueSerializedTypeMap["boolean"];
+  "globe-eventsNetwork1-setParam1--number"?: ParamValueSerializedTypeMap["float"];
+  "globe-eventsNetwork1-setParam1--vector2"?: ParamValueSerializedTypeMap["vector2"];
+  "globe-eventsNetwork1-setParam1--vector2-vector2x"?: ParamValueSerializedTypeMap["float"];
+  "globe-eventsNetwork1-setParam1--vector2-vector2y"?: ParamValueSerializedTypeMap["float"];
+  "globe-eventsNetwork1-setParam1--vector2x"?: ParamValueSerializedTypeMap["float"];
+  "globe-eventsNetwork1-setParam1--vector2y"?: ParamValueSerializedTypeMap["float"];
+  "globe-eventsNetwork1-setParam1--vector3"?: ParamValueSerializedTypeMap["vector3"];
+  "globe-eventsNetwork1-setParam1--vector3-vector3x"?: ParamValueSerializedTypeMap["float"];
+  "globe-eventsNetwork1-setParam1--vector3-vector3y"?: ParamValueSerializedTypeMap["float"];
+  "globe-eventsNetwork1-setParam1--vector3-vector3z"?: ParamValueSerializedTypeMap["float"];
+  "globe-eventsNetwork1-setParam1--vector3x"?: ParamValueSerializedTypeMap["float"];
+  "globe-eventsNetwork1-setParam1--vector3y"?: ParamValueSerializedTypeMap["float"];
+  "globe-eventsNetwork1-setParam1--vector3z"?: ParamValueSerializedTypeMap["float"];
+  "globe-eventsNetwork1-setParam1--vector4"?: ParamValueSerializedTypeMap["vector4"];
+  "globe-eventsNetwork1-setParam1--vector4-vector4x"?: ParamValueSerializedTypeMap["float"];
+  "globe-eventsNetwork1-setParam1--vector4-vector4y"?: ParamValueSerializedTypeMap["float"];
+  "globe-eventsNetwork1-setParam1--vector4-vector4z"?: ParamValueSerializedTypeMap["float"];
+  "globe-eventsNetwork1-setParam1--vector4-vector4w"?: ParamValueSerializedTypeMap["float"];
+  "globe-eventsNetwork1-setParam1--vector4x"?: ParamValueSerializedTypeMap["float"];
+  "globe-eventsNetwork1-setParam1--vector4y"?: ParamValueSerializedTypeMap["float"];
+  "globe-eventsNetwork1-setParam1--vector4z"?: ParamValueSerializedTypeMap["float"];
+  "globe-eventsNetwork1-setParam1--vector4w"?: ParamValueSerializedTypeMap["float"];
+  "globe-eventsNetwork1-setParam1--increment"?: ParamValueSerializedTypeMap["boolean"];
+  "globe-eventsNetwork1-setParam1--string"?: ParamValueSerializedTypeMap["string"];
+  "globe-eventsNetwork1-setParam1--execute"?: ParamValueSerializedTypeMap["button"];
 }

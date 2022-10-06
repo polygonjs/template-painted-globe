@@ -1097,10 +1097,10 @@
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.21.tgz#5de5a2385a35309427f6011992b544514d559aa1"
   integrity sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==
 
-"@polygonjs/polygonjs@1.2.26":
-  version "1.2.26"
-  resolved "https://registry.yarnpkg.com/@polygonjs/polygonjs/-/polygonjs-1.2.26.tgz#baa015b25efa6bf92cee4d55690aa5266201c28d"
-  integrity sha512-OeYoilr+M622j0yD92i6EzsU9cDsoc4zMM5D6CtBqEx+TN+dVE2xYD+lpuHnh2II9llh5np/H/FUVBGKNMjN0Q==
+"@polygonjs/polygonjs@1.2.31":
+  version "1.2.31"
+  resolved "https://registry.yarnpkg.com/@polygonjs/polygonjs/-/polygonjs-1.2.31.tgz#5c4aa23d5ead766c0a853a2aee07a401163db821"
+  integrity sha512-yA3tqkgcGjzETzUghHMbxDKC9nyJ+zHIj+UfwtNd6QRUS2x165RE4Knm7tzeN5IB18SsagVxveZnq8SjezZr9Q==
   dependencies:
     "@dimforge/rapier3d" "0.9.0"
     "@jscad/modeling" "2.9.3"
@@ -5106,12 +5106,12 @@ pkg-dir@^4.1.0:
   dependencies:
     find-up "^4.0.0"
 
-polygonjs-editor@1.2.26-2:
-  version "1.2.26-2"
-  resolved "https://registry.yarnpkg.com/polygonjs-editor/-/polygonjs-editor-1.2.26-2.tgz#b932acc9a1f908139f1506f58977453d966f5e49"
-  integrity sha512-x3Y+sCnHqpJ44qYl2yVBDtamXYXZITFyPCnVH1qKAZGHpMfxpTz/dBTePUnlobd8u1sueueeGJjWUs7gozZgNQ==
+polygonjs-editor@1.2.31-1:
+  version "1.2.31-1"
+  resolved "https://registry.yarnpkg.com/polygonjs-editor/-/polygonjs-editor-1.2.31-1.tgz#74182f860138e059e5ea3ed6b03d7642acff9889"
+  integrity sha512-AsVo4WRdnAzJV7BhqktlUzX9NoYrLCbViit2FoiaB1BzPTkqhBUAKDjo+gQC7QduEj8smAlMnPQQt9GBJ5P2CQ==
   dependencies:
-    "@polygonjs/polygonjs" "1.2.26"
+    "@polygonjs/polygonjs" "1.2.31"
     btoa "1.2.1"
     chalk "4.1.0"
     cors "2.8.5"

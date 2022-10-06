@@ -4,9 +4,9 @@
 		"raycast1": {
 			"type": "raycast",
 			"params": {
-				"mouse": [0.983105279703056, -0.572916603088379],
+				"mouse": [-0.15979899497487438, -0.7728285077951003],
 				"objectMask": "*raycastTarget*",
-				"position": [0.6305376974492243, -0.4892963058247779, 0.5866584097480407]
+				"position": [0.24394920215821891, -0.6506002583823188, 0.7097449861431557]
 			},
 			"inputs": [
 				{
@@ -22,6 +22,31 @@
 				"pointerdown": 0,
 				"pointermove": 1
 			}
+		},
+		"scene1": {
+			"type": "scene",
+			"params": {
+				"ready": 0,
+				"play": 0,
+				"pause": 0,
+				"tick": 0
+			}
+		},
+		"setParam1": {
+			"type": "setParam",
+			"params": {
+				"param": "../raycast1/position",
+				"type": 4,
+				"vector2": [-19, -19],
+				"vector3": [-10, -10, -10]
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "scene1",
+					"output": "created"
+				}
+			]
 		}
 	}
 }

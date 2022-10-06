@@ -2,7 +2,7 @@
 	"multiple_panel": {
 		"split_ratio": 0.5295840656121851,
 		"split_panel0": {
-			"split_ratio": 0.6860132734532014,
+			"split_ratio": 0.5816326530612245,
 			"split_panel0": {
 				"panelTypes": ["viewer"],
 				"currentPanelIndex": 0,
@@ -27,10 +27,10 @@
 			"panel_data": {
 				"camera": {
 					"position": {
-						"x": 45.86488158438656,
-						"y": -38.91379569083821
+						"x": 60.788122066477456,
+						"y": -13.65266618553488
 					},
-					"zoom": 1.0572727050781252
+					"zoom": 1.0781997720336916
 				},
 				"history": {
 					"2": {
@@ -56,8 +56,8 @@
 					},
 					"86": {
 						"position": {
-							"x": 212.33542526965232,
-							"y": -843.080465771221
+							"x": 267.2632540858707,
+							"y": -844.6498323088273
 						},
 						"zoom": 0.6371997720336915
 					},
@@ -208,12 +208,26 @@
 						},
 						"zoom": 0.6371997720336915
 					},
+					"503": {
+						"position": {
+							"x": 0,
+							"y": -250
+						},
+						"zoom": 0.6371997720336915
+					},
 					"505": {
 						"position": {
 							"x": 152.23844311343217,
 							"y": -329.28012538857405
 						},
 						"zoom": 0.6371997720336915
+					},
+					"526": {
+						"position": {
+							"x": 60.788122066477456,
+							"y": -13.65266618553488
+						},
+						"zoom": 1.0781997720336916
 					},
 					"529": {
 						"position": {
@@ -368,72 +382,10 @@
 		},
 		"split_mode": "horizontal"
 	},
-	"currentNodes": ["/", "/", "/", "/", "/", "/", "/", "/"],
+	"currentNodes": ["/globe/eventsNetwork1", "/", "/", "/", "/", "/", "/", "/"],
 	"navigationHistory": {
 		"nodePaths": {
 			"1": [
-				"/globe/COP",
-				"/globe",
-				"/globe/MAT",
-				"/globe/MAT/pointsParticles",
-				"/globe/MAT",
-				"/globe",
-				"/globe/particlesSystemGpu1",
-				"/globe",
-				"/globe/MAT",
-				"/globe/MAT/pointsParticles",
-				"/globe/MAT",
-				"/globe",
-				"/globe/eventsNetwork1",
-				"/globe",
-				"/globe/eventsNetwork1",
-				"/globe",
-				"/globe/MAT",
-				"/globe/MAT/pointsParticles",
-				"/globe/MAT",
-				"/globe",
-				"/globe/particlesSystemGpu1",
-				"/globe",
-				"/globe/MAT",
-				"/globe/MAT/pointsParticles",
-				"/globe/MAT",
-				"/globe",
-				"/globe/particlesSystemGpu1",
-				"/globe",
-				"/globe/MAT",
-				"/globe/MAT/pointsParticles",
-				"/globe/MAT",
-				"/globe",
-				"/globe/particlesSystemGpu1",
-				"/globe",
-				"/globe/MAT",
-				"/globe/MAT/pointsParticles",
-				"/globe/MAT",
-				"/globe",
-				"/globe/MAT",
-				"/globe/MAT/pointsParticles",
-				"/globe/MAT",
-				"/globe/COP",
-				"/globe",
-				"/globe/MAT",
-				"/globe/MAT/pointsParticles",
-				"/globe/MAT",
-				"/globe",
-				"/globe/MAT",
-				"/globe",
-				"/globe/MAT",
-				"/globe/MAT/pointsParticles",
-				"/globe/MAT",
-				"/globe",
-				"/globe/MAT",
-				"/globe/MAT/pointsParticles",
-				"/globe/MAT",
-				"/globe",
-				"/globe/MAT",
-				"/globe/MAT/pointsParticles",
-				"/globe/MAT",
-				"/globe",
-				"/globe/particlesSystemGpu1",
 				"/globe",
 				"/",
 				"/cameras",
@@ -447,7 +399,13 @@
 				"/globe/MAT/pointsParticles",
 				"/globe/MAT",
 				"/globe",
-				"/"
+				"/",
+				"/globe",
+				"/globe/eventsNetwork1",
+				"/globe",
+				"/globe/MAT",
+				"/globe",
+				"/globe/eventsNetwork1"
 			],
 			"2": ["/"],
 			"3": ["/"],
@@ -458,7 +416,7 @@
 			"8": ["/"]
 		},
 		"index": {
-			"1": 75,
+			"1": 19,
 			"2": 0,
 			"3": 0,
 			"4": 0,

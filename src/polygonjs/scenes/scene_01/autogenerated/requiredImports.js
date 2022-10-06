@@ -9,6 +9,8 @@ import { ImageCopNode } from "@polygonjs/polygonjs/dist/src/engine/nodes/cop/Ima
 import { CameraOrbitControlsEventNode } from "@polygonjs/polygonjs/dist/src/engine/nodes/event/CameraOrbitControls";
 import { PointerEventNode } from "@polygonjs/polygonjs/dist/src/engine/nodes/event/Pointer";
 import { RaycastEventNode } from "@polygonjs/polygonjs/dist/src/engine/nodes/event/Raycast";
+import { SceneEventNode } from "@polygonjs/polygonjs/dist/src/engine/nodes/event/Scene";
+import { SetParamEventNode } from "@polygonjs/polygonjs/dist/src/engine/nodes/event/SetParam";
 // mat
 import { MeshBasicMatNode } from "@polygonjs/polygonjs/dist/src/engine/nodes/mat/MeshBasic";
 import { PointsBuilderMatNode } from "@polygonjs/polygonjs/dist/src/engine/nodes/mat/PointsBuilder";
@@ -47,6 +49,8 @@ export const requiredImports_scene_01 = {
     CameraOrbitControlsEventNode,
     PointerEventNode,
     RaycastEventNode,
+    SceneEventNode,
+    SetParamEventNode,
     MeshBasicMatNode,
     PointsBuilderMatNode,
     GeoObjNode,
