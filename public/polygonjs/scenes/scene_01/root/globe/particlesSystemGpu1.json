@@ -800,7 +800,7 @@
 			"uniforms": {
 				"v_POLY_param_cursor": {
 					"type": "v3",
-					"value": [0.24394920215821891, -0.6506002583823188, 0.7097449861431557]
+					"value": [-10, -10, -10]
 				}
 			},
 			"vertexShader": "void main() {\n\tgl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );\n}",

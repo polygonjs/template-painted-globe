@@ -4,9 +4,9 @@
 		"raycast1": {
 			"type": "raycast",
 			"params": {
-				"mouse": [-0.15979899497487438, -0.7728285077951003],
+				"mouse": [0.9638190954773869, -0.40757238307349675],
 				"objectMask": "*raycastTarget*",
-				"position": [0.24394920215821891, -0.6506002583823188, 0.7097449861431557]
+				"position": [-10, -10, -10]
 			},
 			"inputs": [
 				{
@@ -44,7 +44,7 @@
 				{
 					"index": 0,
 					"node": "scene1",
-					"output": "created"
+					"output": "ready"
 				}
 			]
 		}

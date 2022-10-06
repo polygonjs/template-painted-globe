@@ -11,8 +11,8 @@ const manifest = {
     "globe/MAT": "1660955128058",
     "globe/MAT/pointsParticles": "1663712037130",
     "globe/COP": "1663712037130",
-    "globe/particlesSystemGpu1": "1665052692441",
-    "globe/eventsNetwork1": "1665052692441",
+    "globe/particlesSystemGpu1": "1665052784178",
+    "globe/eventsNetwork1": "1665052784178",
   },
   shaders: {
     "/globe/MAT/pointsParticles": {
