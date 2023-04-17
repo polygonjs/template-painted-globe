@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-1 h-full">
+  <div class="flex-1 h-full scale-150 lg:scale-100">
     <Scene01></Scene01>
   </div>
 </template>

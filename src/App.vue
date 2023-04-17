@@ -1,8 +1,10 @@
 <template>
   <div
-    class="h-full relative items-center justify-center w-full overflow-x-hidden"
+    class="relative items-center justify-center w-full h-full overflow-x-hidden"
   >
-    <div class="h-full items-center justify-between flex flex-col lg:flex-row">
+    <div
+      class="flex flex-col-reverse items-center justify-between h-full lg:flex-row"
+    >
       <HeroText></HeroText>
       <HeroVisuals></HeroVisuals>
     </div>
