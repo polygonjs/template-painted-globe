@@ -6,7 +6,7 @@
       class="flex flex-col-reverse items-center justify-between h-full lg:flex-row"
     >
       <HeroText></HeroText>
-      <HeroVisuals></HeroVisuals>
+      <HeroVisuals class="hidden lg:block"></HeroVisuals>
     </div>
   </div>
 </template>
