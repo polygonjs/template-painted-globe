@@ -13,7 +13,7 @@
     class="ml-[8vw] -mt-[30rem] lg:-mt-40 w-[100%] lg:w-auto text-left lg:pt-0 xl:ml-[13vw]"
   >
     <h1
-      class="relative mx-auto mb-4 text-3xl sm:text-4xl font-black leading-snug lg:text-4xl xl:text-4xl xl:mb-10"
+      class="relative mx-auto mb-4 text-3xl font-black leading-snug sm:text-4xl lg:text-4xl xl:text-4xl xl:mb-10"
     >
       About us
     </h1>
@@ -27,7 +27,7 @@
       symsys.alumni@gmail.com with any questions or concerns.
     </p>
     <h1
-      class="relative mx-auto mb-8 text-3xl sm:text-4xl font-black leading-snug lg:text-4xl xl:text-4xl xl:mb-10"
+      class="relative mx-auto mb-8 text-3xl font-black leading-snug sm:text-4xl lg:text-4xl xl:text-4xl xl:mb-10"
     >
       Community Resources
     </h1>
@@ -41,7 +41,7 @@
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="#A2221C"
-          class="w-20 h-20 inline"
+          class="inline w-20 h-20"
         >
           <path
             stroke-linecap="round"
@@ -51,8 +51,8 @@
         </svg>
         <h3 class="pt-3 font-bold">Alumni Newsletter</h3>
         <div class="pt-3">
-          Get the latest scoop on alumni news, jobs, and asks. Post your own to
-          a global community of alumni.
+          Read and contribute to our monthly newsletter, which contains the
+          latest scoop on alumni news, jobs, and asks.
         </div>
       </div>
       <div class="w-[30%] justify-center text-center items-center">
@@ -62,7 +62,7 @@
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="#A2221C"
-          class="w-20 h-20 inline"
+          class="inline w-20 h-20"
         >
           <path
             stroke-linecap="round"
@@ -81,7 +81,7 @@
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="#A2221C"
-          class="w-20 h-20 inline"
+          class="inline w-20 h-20"
         >
           <path
             stroke-linecap="round"
