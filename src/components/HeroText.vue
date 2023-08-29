@@ -14,10 +14,10 @@
     </div>
   </div> -->
   <div
-    class="flex-1 ml-[20vw] w-[100%] lg:w-auto pt-40 text-left lg:pt-0 lg:mx-0 lg:ml-[10vw] xl:ml-[13vw]"
+    class="flex-1 ml-[20vw] w-[100%] lg:w-auto pt-40 text-left lg:pt-0 lg:mx-0 lg:ml-[8vw] xl:ml-[13vw]"
   >
     <h1
-      class="relative mx-auto mb-4 text-3xl sm:text-4xl font-black leading-snug text-[#A2221C] lg:text-5xl xl:text-6xl xl:mb-10"
+      class="relative mx-auto mb-4 text-4xl font-black leading-snug text-[#A2221C] lg:text-5xl xl:text-6xl xl:mb-10"
     >
       SymSys Connect
     </h1>
@@ -31,7 +31,7 @@
       <a
         href="mailto:youremail@yourdomain.com"
         class="relative tracking-wide inline-block px-10 py-3 sm:px-12 sm:py-4 mx-0 mt-0 text-base font-bold border-t border-gray-200 rounded-md shadow-xl text-white bg-[#A2221C] sm:mt-1 fold-bold lg:mx-0"
-        >About</a
+        >Apply</a
       >
       <a
         href="mailto:youremail@yourdomain.com"
