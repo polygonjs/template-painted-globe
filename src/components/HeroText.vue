@@ -14,7 +14,7 @@
     </div>
   </div> -->
   <div
-    class="flex-1 ml-[20vw] w-[100%] lg:w-auto pt-40 text-left lg:pt-0 lg:mx-0 lg:ml-[8vw] xl:ml-[13vw]"
+    class="flex-1 ml-[8vw] w-[100%] lg:w-auto pt-40 text-left lg:pt-0 xl:ml-[13vw]"
   >
     <h1
       class="relative mx-auto mb-4 text-4xl font-black leading-snug text-[#A2221C] lg:text-5xl xl:text-6xl xl:mb-10"

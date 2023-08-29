@@ -10,21 +10,27 @@
     </div>
   </div>
   <div
-    class="ml-[8vw] -mt-[30rem] lg:-mt-40 w-[100%] lg:w-auto text-left lg:pt-0 xl:ml-[13vw]"
+    class="ml-[8vw] -mt-40 sm:-mt-[72] md:-mt-[80] lg:-mt-40 w-[100%] lg:w-auto text-left lg:pt-0 xl:ml-[13vw]"
   >
     <h1
       class="relative mx-auto mb-4 text-3xl font-black leading-snug sm:text-4xl lg:text-4xl xl:text-4xl xl:mb-10"
     >
-      About us
+      About Us
     </h1>
     <p
       class="mb-10 text-lg text-gray-600 lg:leading-9 sm:text-lg w-[80%] sm:w-[60%] lg:w-[90%] lg:text-xl lg:pb-20"
     >
-      Our goal is to create an inclusive community for all alumni of the
-      Stanford Symbolic Systems Program. By joining, you will have first access
-      to events, news, and job opportunities with your fellow Symbolic Systems
-      alumni from around the world. Apply now, or reach out to
-      symsys.alumni@gmail.com with any questions or concerns.
+      Hello, Sym Sys People! We (David Shacklette ’21, Sunwoo Lee ’21, and
+      Cooper Reed ’23) are a team of SymSys alumni working to create resources
+      to streamline engagement opportunities within our alumni community. We're
+      starting out with a community-curated (psuedo-decentralized) newsletter,
+      but plan to include events, mentorship matching, and more down the road.
+      <br />
+      <br />
+      By joining, you will have first access to events, news, and job
+      opportunities with your fellow Symbolic Systems alumni from around the
+      world. Apply now to get access to all of these and stay connected, or
+      reach out to symsys.alumni@gmail.com with any questions or concerns.
     </p>
     <h1
       class="relative mx-auto mb-8 text-3xl font-black leading-snug sm:text-4xl lg:text-4xl xl:text-4xl xl:mb-10"
@@ -51,8 +57,8 @@
         </svg>
         <h3 class="pt-3 font-bold">Alumni Newsletter</h3>
         <div class="pt-3">
-          Read and contribute to our monthly newsletter, which contains the
-          latest scoop on alumni news, jobs, and asks.
+          Read <em>and</em> contribute to our monthly newsletter, which contains
+          the latest scoop on alumni news, jobs, and asks.
         </div>
       </div>
       <div class="w-[30%] justify-center text-center items-center">
