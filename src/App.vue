@@ -38,7 +38,7 @@
       Community Resources
     </h1>
     <div
-      class="flex gap-x-[5%] mb-10 text-lg text-gray-600 lg:leading-9 sm:text-lg w-[90%] sm:w-[70%] lg:w-[80%] lg:text-xl lg:pb-40"
+      class="flex gap-x-[5%] justify-between mb-10 text-lg text-gray-600 lg:leading-9 sm:text-lg w-[90%] sm:w-[70%] lg:w-[80%] lg:text-xl lg:pb-40"
     >
       <div class="w-[30%] justify-center text-center items-center">
         <svg
