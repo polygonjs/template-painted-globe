@@ -30,7 +30,9 @@
       By joining, you will have first access to events, news, and job
       opportunities with your fellow Symbolic Systems alumni from around the
       world. Apply now to get access to all of these and stay connected, or
-      reach out to symsys.alumni@gmail.com with any questions or concerns.
+      reach out to
+      <a href="mailto:symsys.alumni@gmail.com">symsys.alumni@gmail.com</a>
+      with any questions or concerns.
     </p>
     <h1
       class="relative mx-auto mb-8 text-3xl font-black leading-snug sm:text-4xl lg:text-4xl xl:text-4xl xl:mb-10"

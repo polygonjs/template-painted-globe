@@ -29,3 +29,4 @@ public/polygonjs/js
 *.lock
 yarn.lock
 package-lock.json
+yarn.lock

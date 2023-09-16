@@ -29,12 +29,12 @@
     </p>
     <div class="flex gap-5 sm:gap-10 lg:gap-28">
       <a
-        href="mailto:youremail@yourdomain.com"
+        href="https://www.crowdmesh.io/signup/symsys"
         class="relative tracking-wide inline-block px-10 py-3 sm:px-12 sm:py-4 mx-0 mt-0 text-base font-bold border-t border-gray-200 rounded-md shadow-xl text-white bg-[#A2221C] sm:mt-1 fold-bold lg:mx-0"
         >Apply</a
       >
       <a
-        href="mailto:youremail@yourdomain.com"
+        href="https://www.crowdmesh.io/login"
         class="relative tracking-wide inline-block px-10 py-3 sm:px-12 sm:py-4 mx-0 mt-0 text-base font-bold border-t border-gray-200 rounded-md shadow-xl text-white bg-[#A2221C] sm:mt-1 fold-bold lg:mx-0"
         >Login</a
       >
